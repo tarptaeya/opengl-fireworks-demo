@@ -17,5 +17,5 @@ void main()
     position.y = 0.05f;
     gl_Position = u_projection * u_view * u_world * position;
     v_texcoord = a_texcoord;
-    v_distance = length(u_view * u_world * a_position);
+    v_distance = length(u_view * a_position);
 }
